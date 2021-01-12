@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BMI"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="allowBackup, label">
+        <activity android:name=".Chatlist"></activity>
+        <activity android:name=".Chat" />
+        <activity android:name=".Ulasan" />
+        <activity android:name=".DetailGagalTrainer" />
+        <activity android:name=".DetailGagal" />
+        <activity android:name=".Komentar" />
+        <activity android:name=".DetailSuksesTrainer" />
+        <activity android:name=".RiwayatTrainer" />
+        <activity android:name=".DetailSukses" />
+        <activity android:name=".DetailProsesTrainer" />
+        <activity android:name=".DetailProses" />
+        <activity android:name=".RiwayatPengguna" />
+        <activity android:name=".DetailTrainer" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".HomeTrainer" />
+        <activity android:name=".LoginTrainer" />
+        <activity android:name=".ExpandableList" />
+        <activity android:name=".detail_post_offline" />
+        <activity android:name=".news_app_offline" />
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".news_app" />
+        <activity android:name=".send_email" />
+        <activity android:name=".info" />
+        <activity android:name=".PieChart" />
+        <activity android:name=".berat_ideal" />
+        <activity android:name=".target_berat" />
+        <activity android:name=".history" />
+        <activity android:name=".hitung_bmi_online" />
+        <activity android:name=".profil_user" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".hitung_bmi_offline" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/places_api_key" />
+
+        <receiver android:name=".ReminderBroadcast" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

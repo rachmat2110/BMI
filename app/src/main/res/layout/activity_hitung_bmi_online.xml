@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".hitung_bmi_online">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTanggal"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/blackcolor" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/img"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/imgBMI"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bmi"
+                    />
+
+                <FrameLayout
+                    android:layout_width="260dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/bmi_text"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtBB"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Kalkulator BMI"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blackcolor"
+                        />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackcolor"
+                        android:text="BMI atau IMT adalah angka yang menentukan apakah berat badan anda ideal, kurang, atau berlebih"
+                        />
+
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/bmi_text"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Untuk menghitung BMI Anda, silahkan jawab dua pertanyaan berikut :"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:background="@drawable/bmi_text"
+                android:text="Tinggi Badan (cm)"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/blackcolor"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/txtTB_bmi"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textSize="12sp"
+                android:textColor="@color/blackcolor"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:background="@drawable/bmi_text"
+                android:text="Berat Badan (kg)"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/blackcolor"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/txtBB_bmi"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:textSize="12sp"
+                android:textColor="@color/blackcolor"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:background="@drawable/bmi_text"
+                android:text="Kriteria Olahraga Anda Dalam 1 Minggu"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/blackcolor"
+                android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/radio_ringan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(RINGAN) 75% duduk atau berdiri, 25% berdiri atau bergerak"
+                    android:onClick="checkButton"/>
+                <RadioButton
+                    android:textSize="12sp"
+                    android:id="@+id/radio_sedang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(SEDANG) 25% duduk atau berdiri, 75% Beraktivitas"
+                    android:onClick="checkButton"/>
+                <RadioButton
+                    android:textSize="12sp"
+                    android:id="@+id/radio_berat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(BERAT) 40% duduk atau berdiri, 60% Beraktivitas"
+                    android:onClick="checkButton"/>
+
+            </RadioGroup>
+
+            <Button
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/hitung_bmi"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/joinbtn"
+                android:text="HITUNG"
+                android:textColor="@android:color/white"
+                android:onClick="hasil"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Hasil Perhiungan"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/blackcolor"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:id="@+id/txtHasil_angka"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:background="@drawable/polygon"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="BMI Kamu"
+                    android:textSize="16sp"
+                    android:textColor="@color/blackcolor"/>
+
+                <TextView
+                    android:id="@+id/txtHasil_huruf"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blackcolor"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/nama"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/simpan_bmi"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/joinbtn"
+                    android:text="SIMPAN"
+                    android:textColor="@color/lightwhite"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

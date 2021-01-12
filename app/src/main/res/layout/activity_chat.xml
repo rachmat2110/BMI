@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wa"
+    android:orientation="vertical"
+    tools:context=".Chat">
+
+    <LinearLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/top_chat">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_keyboard"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:text="Noer Rachmat Octavianto"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/username"
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:text="online"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/online"
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="-50dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/profile_image"
+            android:background="@drawable/mamat"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#55FFFFFF"
+        android:layout_below="@id/bar_layout"
+        android:layout_above="@id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"/>
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_marginRight="45dp"
+            android:background="@drawable/bg_round"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:id="@+id/text_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:hint="Tulis Pesan..."/>
+
+        <LinearLayout
+            android:id="@+id/btn_send"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/text_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageButton
+                android:id="@+id/img_send"
+                android:layout_marginLeft="11dp"
+                android:layout_gravity="center"
+                android:background="@drawable/send"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

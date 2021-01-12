@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528667212574",
+    "firebase_url": "https://bmi-calculate-f8c6b.firebaseio.com",
+    "project_id": "bmi-calculate-f8c6b",
+    "storage_bucket": "bmi-calculate-f8c6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528667212574:android:e29874ef8333d4144fe70f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528667212574-446bt928cckfvc3dgrq59ckvcstredfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "d97583f4d57c16698d1a1639645768860bc934af"
+          }
+        },
+        {
+          "client_id": "528667212574-t2el1o5dahq6eb5dsg2lks8b8il77sej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNmP-WroP4kUZwPHH_kvglKk5cjQKVa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528667212574-t2el1o5dahq6eb5dsg2lks8b8il77sej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExpandableList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="EDUKASI"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:background="#75D3C0"
+            android:gravity="center"
+            android:elevation="5dp"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:background="@drawable/think"
+            android:id="@+id/imglogo"
+            android:layout_width="170dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#FFF6F5FA">
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/imglogo"
+            android:id="@+id/expandableListView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp" />
+
+        <LinearLayout
+            android:layout_marginTop="-50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_marginStart="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bmi_icon"/>
+
+            <TextView
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="#STAYHEALTHY"
+                android:textColor="#75d3c0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

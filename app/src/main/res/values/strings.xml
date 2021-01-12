@@ -1,0 +1,67 @@
+<resources>
+    <string name="places_api_key" translatable="false">AIzaSyCU8sIJIzl7TH3IvQXUqRADKiGzNXgAzn0</string>
+    <string name="selected_address" translatable="false">Selected address</string>
+    <string name="choose_country" translatable="false">Country</string>
+    <string name="select_location_on_map" translatable="false">Select location on map</string>
+    <string name="supported_areas" translatable="false">User can only select locations which contains these literals.. \nSeparate each with comma</string>
+    <string name="supported_areas_hint" translatable="false">ex : cairo,القاهرة</string>
+    <string name="latitude" translatable="false">Latitude</string>
+    <string name="longitude" translatable="false">Longitude</string>
+    <string name="language" translatable="false">Language</string>
+
+    <string name="app_name">My Application</string>
+
+    <string-array name="edukasi">
+        <item>GAMBARAN INDEKS MASSA TUBUH (IMT)  JAMAAH MESJID AL- FATAH MALALAYANG</item>
+        <item>Pengujian Aplikasi dengan Metode Blackbox Testing Boundary Value Analysis (Studi Kasus: Kantor Digital Politeknik Negeri Lampung)</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>Volume 3, Nomor 3, September-Desember 2015</item>
+        <item>Vol.03, No.02, Januari 2018</item>
+    </string-array>
+
+    <string-array name="abstrak">
+        <item> Obesitas merupakan salah satu manifestasi dari masalah gizi lebih, yang perlu mendapatkan perhatian. Pada tahun 2000, Direktorat Bina Gizi Masyarakat Departemen Kesehatan RI mencatat jumlah penduduk Indonesia yang masuk kategori obesitas diperkirakan 76.7 juta (17.5%) . Banyak faktor yang berperan dalam terjadinya obesitas yang sebagian besar merupakan interaksi antara faktor genetik dengan faktor lingkungan, antara lain aktivitas fisik, sosial ekonomi, dan nutrisi. Keadaan obesitas meningkatkan risiko penyakit-penyakit kardiovaskular karena keterkaitanya dengan sindrom metabolik atau atau sindrom resistensi insulin/hiperinsulinemia, intoleransi glukosa/Diabetes Melitus (DM), dyslipidemia, hipertensi dan lainnya.
+         Penelitian ini menggunakan desain penelitian  kuantitatif dan pendekatan cross sectional yang berlangsung dari Juli – Agustus 2015. total sampel berjumlah 20 orang yang diambil pada jamaah Masjid Al- Fatah Malalayang yang berusia 19 – 21 tahun. Berdasarkan hasil penelitian didapatkan bahwa responden yang memiki berat badan kurang berjumlah 8 responden, responden dengan berat badan normal 9 responden dan merupakan yang terbanyak, responden dengan pra obesitas 1 responden, sedangkan responden dengan badan obesitas II 2 responden.
+        Simpulan: Dari hasil penelitian dapat disimpulkan bahwa gambaran Indeks Massa tubuh (IMT) masjid al – fatah malalayang responden dengan berat badan kurang memiliki persentase sebesar 40%, responden dengan berat badan normal memiliki persentase sebesar 45%, responden dengan berat badan lebih memiliki persentase sebesar 15%, responden
+        dengan berat badan pra obesitas memiliki persentase sebesar 5%, Responden dengan berat badan obesitas II memiliki persentase sebesar 10%. </item>
+
+        <item>Pengujian perangkat lunak merupakan elemen kritis dalam menentukan kualitas suatu perangkat lunak. Pengujian ini meliputi desain, spesifikasi, dan koding.
+         Penelitian ini bertujuan menguji perangkat lunak kantor digital di Politeknik Negeri Lampung. Proses pengujian dilakukan untuk mengetahui tingkat kesalahan yang terjadi pada perangkat lunak.  Pengujian ini menggunakan black box testing boundary value analysis.
+         Boundary Value Analysis merupakan jenis test case dengan menentukan nilai normal, nilai minimal dan nilai maksimal dari data yang akan diuji. aplikasi mampu menangani data, baik data normal ataupun data tidak normal dengan persentase keberhasilan 91, 67 %. </item>
+    </string-array>
+
+    <string-array name="pendahuluan">
+        <item>Obesitas merupakan salah satu manifestasi dari masalah gizi lebih, yang perlu mendapatkan perhatian. Obesitas merupakan keadaan berlebihnya lemak tubuh secara absolut maupun relatif
+        Rumusan perhitungan IMT adalah sebagai berikut.  IMT = Berat Badan (kg) / (Tinggi Badan (m) 𝑥 𝑇𝑖𝑛𝑔𝑔𝑖 𝐵𝑎𝑑𝑎𝑛 (𝑚)) </item>
+
+        <item>Kantor digital merupakan sebuah bentuk aplikasi layanan perkantoran dalam format digital yang bekerja secara online. Kantor Digital dibuat untuk membantu proses administrasi perkantoran di Politeknik Negeri Lampung, seperti pengarsipan, dokumentasi, dan surat menyurat.
+            Dengan aplikasi ini, diharapkan proses administrasi perkantoran di Politeknik Negeri Lampung dapat berjalan lancar dan baik. </item>
+    </string-array>
+
+    <string-array name="metode">
+        <item>Penelitian yang di lakukan berupa penelitian deskriptif  yang menggunakan desain Cross sectional. Penelitian dilakukan di di Masjid Al- Fatah Kampung Baru Kelurahan Malalayang, Kecamatan Malalayang, Kota Manado, Sulawesi Utara. Penelitian ini dilakukan selama 2 bulan sejak persiapan sampai penyusunan laporan yaitu pada bulan Juli 2015 sampai Agustus 2015. Yang menjadi sampel dalam penelitian ini disebut responden yang berjumlah 20 orang. Responden adalah para Jamaah Mesjid Al-Falah malalayang.
+ </item>
+
+        <item>Pada penelitian yang dilakukan, terdapat beberap tahapan yang dilakukan. Identifikasi masalah, pemilihan data uji, pengi-input-an data uji kedalam sistem, proses pengujian dengan menggunakan soundary value analysis, melakukn perhitungn data pengujian, dan dokumentasi hsil uji </item>
+    </string-array>
+
+    <string-array name="hasil">
+        <item>Responden dengan berat badan kurang memiliki persentase sebesar 40%.
+responden dengan berat badan normal memiliki persentase sebesar 45%. Responden dengan berat badan lebih memiliki persentase sebesar 15%.
+            Responden dengan berat badan pra obesitas memiliki persentase sebesar 5%.
+            Responden dengan berat badan obesitas II memiliki persentase sebesar 10%. </item>
+
+        <item>Hasil Pengujian menunjukkan bahwa aplikasi mampu menangani data, baik data normal ataupun
+data tidak normal dengan persentase keberhasilan 91, 67 %.</item>
+    </string-array>
+
+    <string-array name="kesimpulan">
+        <item>untuk berat badan lebih dan obesitas dilakukan pembatasan kalori yaitu terapi medik dan olahraga. Biasanya,
+        pembatasan kalori cukup dilakukan dengan mengurangi jumlah kalori sebesar 500 kilokalori dari jumlah yang biasa dikonsumsi sebelumnya. peningkatan aktivitas tubuh dapat dilakukan dengan jalan cepat 3x50 menit/minggu atau renang, dll.
+        Untuk obesitas, sasaran yang ingin dicapai adalah menurunkan berat badan 510% dari berat badan awal. Dengan penurunan berat badan 5-10% dari berat badan awal tersebut dapat mengurangi faktor resiko koroner. Sedangkan untuk berat badan kurang disarankan untuk melakukan perbaikan gizi. </item>
+
+        <item>Hasil Pengujian menunjukkan bahwa aplikasi mampu menangani data, baik data normal ataupun data tidak normal dengan persentase keberhasilan 91, 67 %. Tiga field perlu diperbaiki sehingga bisa meningkatkan kemampuan aplikasi dalam mengolah data dalam kondisi normal ataupun tidak normal</item>
+    </string-array>
+</resources>

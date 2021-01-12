@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#00a9c6"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/img"
+            android:layout_marginTop="20dp">
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="60dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                >
+
+                <ImageView
+                    android:id="@+id/profilImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profil"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nama_pengguna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Coding"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="#636363"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:onClick="ClickHome">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Profil"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_marginStart="16dp"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="48dp"-->
+<!--            android:src="@drawable/ic_person"/>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:onClick="ClickChat">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/chat"/>
+
+        <TextView
+            android:id="@+id/chat"
+            android:fontFamily="@font/poppins"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat Dengan Trainer"
+            android:padding="12dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:onClick="ClickRiwayat">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/clock"/>
+
+        <TextView
+            android:fontFamily="@font/poppins"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Riwayat Pemesanan"
+            android:padding="12dp"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:onClick="ClickLogout">-->
+
+<!--        <ImageView-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/logout"/>-->
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Keluar Akun"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_marginStart="20dp"/>-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

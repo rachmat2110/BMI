@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#75D3C0"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bmi_icon"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#STAYHEALTHY"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/dashboard_rectangle">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilihlah Menu Yang Anda Butuhkan"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#B1DBD1"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RelativeLayout
+                        android:onClick="pembelajaran"
+                        android:layout_gravity="center"
+                        android:id="@+id/btn_edukasi"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_width="165dp"
+                        android:layout_height="205dp"
+                        android:background="@drawable/card_homepage">
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:text="EDUKASI SEPUTAR  IMT  "
+                            />
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:textSize="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="80dp"
+                            android:text="Pembelajaran tentang \nBMI berdasarkan pertanyaan-pertanyaan"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="140dp"
+                            android:layout_marginStart="90dp"
+                            android:background="@drawable/edukasi"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/btn_offline"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="165dp"
+                        android:layout_height="205dp"
+                        android:background="@drawable/card_homepage"
+                        android:onClick="perhitungan_offline">
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:text="PERHITUNGAN OFFLINE"
+                            />
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:textSize="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="80dp"
+                            android:text="Berisikan perhitungan tanpa melakukan registrasi LOGIN"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="140dp"
+                            android:layout_marginStart="90dp"
+                            android:background="@drawable/icon_tanpa_login"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/btn_online"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_width="165dp"
+                        android:layout_height="205dp"
+                        android:background="@drawable/card_homepage"
+                        android:onClick="online">
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:text="PERHITUNGAN ONLINE"
+                            />
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:textSize="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="70dp"
+                            android:text="Berisikan perhitungan \ndengan melakukan \nLOGIN terlebih dahulu, \nagar data dapat \ntersimpan"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="140dp"
+                            android:layout_marginStart="90dp"
+                            android:background="@drawable/icon_login"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:onClick="info"
+                        android:layout_gravity="center"
+                        android:id="@+id/btn_info"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="165dp"
+                        android:layout_height="205dp"
+                        android:background="@drawable/card_homepage">
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:text="INFO"
+                            />
+
+                        <TextView
+                            android:layout_marginStart="25dp"
+                            android:textSize="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="70dp"
+                            android:text="Keterangan mengenai fitur-fitur yang terdapat dalam aplikasi"/>
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_trainer"
+                    android:onClick="Login_Trainer"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/btn_trainer"
+                    android:elevation="3dp">
+
+                    <LinearLayout
+                        android:background="#75D3C0"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/trainer"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginRight="50dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Login Personal Trainer"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="-30dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/arrow_right"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
